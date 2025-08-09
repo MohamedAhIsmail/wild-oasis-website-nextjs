@@ -1,36 +1,34 @@
-"use client"
-
 import Link from "next/link";
 
-const links = [
-  {
-    path: "/",
-    name: "Home",
-  },
-  {
-    path: "/cabins",
-    name: "Cabins",
-  },
-  {
-    path: "/account",
-    name: "Account",
-  },
-  {
-    path: "/about",
-    name: "About",
-  },
-];
-
-function Navigation() {
+export default function Navigation() {
   return (
-    <ul>
-      {links.map((link, i) => (
-        <li key={i}>
-          <Link href={`${link.path}`}>{link.name}</Link>
+    <nav className="z-10 text-xl">
+      <ul className="flex gap-16 items-center">
+        <li>
+          <Link
+            href="/cabins"
+            className="hover:text-accent-400 transition-colors"
+          >
+            Cabins
+          </Link>
         </li>
-      ))}
-    </ul>
+        <li>
+          <Link
+            href="/about"
+            className="hover:text-accent-400 transition-colors"
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/account"
+            className="hover:text-accent-400 transition-colors"
+          >
+            Guest area
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
-
-export default Navigation;
