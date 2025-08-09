@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "./_styles/globals.css";
 
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-primary-950 text-primary-50 min-h-screen">
         <header>
           <Logo />
           <Navigation />
