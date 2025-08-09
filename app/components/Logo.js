@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/logo.png";
+// import logo from "../../public/logo.png";
 
 function Logo() {
   return (
@@ -11,7 +11,7 @@ function Logo() {
         width="60"
         alt="The Wild Oasis logo"
       /> */}
-      <Image src={logo} alt="Wild Oasis" />
+      <Image src="/logo.png" height={60} width={60} alt="Wild Oasis" />
       <span className="text-xl font-semibold text-primary-100">
         The Wild Oasis
       </span>
