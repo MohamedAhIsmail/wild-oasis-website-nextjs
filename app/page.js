@@ -7,8 +7,10 @@ export default function Home() {
     <main className="mt-24">
       <Image
         src={bg}
+        placeholder="blur"
+        quality={80}
         fill
-        className="object-cover"
+        className="object-cover object-top"
         alt="Mountains and forests with two cabins"
       />
 
